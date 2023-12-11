@@ -1,0 +1,352 @@
+*{
+	margin: 0;
+	padding: 0;
+	}
+/*Css for global navigation*/
+nav ul{
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	flex:1;
+	background-image: url("../images/ezgif.com-cro11p.gif");
+	background-size: cover;
+	padding:20px;
+}
+ul li{
+	list-style-type: none;
+}
+ul li:nth-child(1){
+	font-family: "Felix Titling Regular";
+	font-weight: 600;
+	font-size:60px;
+	color: rgb(255, 255, 255);
+	text-align:left;
+	margin-left: 20px;
+	letter-spacing: 1.5px;
+}
+ul li:nth-child(2){
+margin-left: 60em;
+}
+ul li a{
+	float: right;
+	text-align: right;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	font-weight: 400;
+	padding: 10px;
+	margin-top: 20px;
+	position: relative;
+}
+ul li a:hover{
+	color:rgb(228, 228, 228);
+}
+ul li a::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 2.5px;
+	bottom: 0;
+	left: 0;
+	background-color: #ffffff;
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+  }
+ul li a:hover::before {
+	transform: scaleX(1);
+  }
+
+/*Css for index*/
+
+.flip{
+	margin-left: 75vh;
+	align-items: center;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	width: 480px;
+	height: 640px;
+    perspective: 1000px;
+	border-radius: 12px;
+}
+fieldset{
+    position: relative;
+    border: none;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-box{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+	
+}
+.one,.two{
+	position: absolute;
+	width: 100%;
+	height: 100%;;
+	padding: 15px;
+	box-sizing: border-box;
+	backface-visibility: hidden;
+	border-radius: 12px;
+}
+.three{
+	margin:4%;
+	position: relative;
+	height:100%;
+	width:max-content;
+	align-items: center;
+	padding: 15px;
+	box-sizing: border-box;
+	left:25%;
+	right:25%;
+	border-radius: 2%;
+}
+.one fieldset{
+	padding: 5em;
+	line-height: 2.5;
+}
+.three fieldset{
+	padding: 1.5em;
+	line-height: 1.6;
+}
+.two fieldset{
+	padding: 2em;
+	line-height: 2.2em;
+}
+fieldset h2{
+text-align: center;
+font-size: xxx-large;
+}
+.two fieldset h2{
+	line-height: 1;
+}
+label{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: larger;
+	
+}
+.two label{
+	font-size: large;
+}
+input,select{
+	border: none;
+	border-radius: 5px;
+	height: 25px;
+	padding: 5px;
+	background-color: rgba(253, 250, 240, 0.744);
+}
+select{
+	height: 35px;
+}
+button{
+	text-align: center;
+	margin-left: 5em;
+	margin-top: 2em;
+	border-radius: 5px;
+	border: none;
+	width: 100px;
+	height:30px;
+	background-color: rgb(73, 41, 14);
+	color: rgb(247, 251, 254);
+	font-size: larger;
+	padding-bottom: 1px;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.two button{
+	margin-top: 2em;
+	margin-left: 8em;
+}
+.three button{
+	margin-left: 9em;
+}
+button:hover{
+	background-color: rgba(73, 41, 14, 0.688);
+	color: rgb(247, 251, 254);
+	transition: 0.2s ease-in-out;
+}
+input[type="checkbox"]{
+	font-size: small;
+    margin-right: -30em;
+}
+p span{
+ text-decoration: underline;
+ color: rgb(142, 37, 2);
+ font-style: italic;
+ font-weight: bolder;
+ letter-spacing: 2px;
+}
+.two p{
+	margin-left: 5%;
+}
+
+::placeholder{
+	font-size: 12px;
+}
+img{
+	border-radius: 10px;
+}
+
+font-face {
+    font-family: "Felix Titling Regular";
+    src:
+      url("C:\New folder\htdocs\AssignmentL'atelier\Fonts\felix-titling-regular_FGWzC\Felix Titling Regular\Felix Titling Regular.ttf");
+  }
+h2{
+    font-family: "Felix Titling Regular";
+    font-weight: 1000;
+	align-items: center;
+}
+article.two{
+	transform: rotateY(180deg);
+}
+
+body{
+	background-image: url('../images/fall.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	backdrop-filter: brightness(70%);
+}
+.add{
+	background: rgba(0, 0, 0, 0.405);
+	backdrop-filter: blur(5em);
+	color: aliceblue;
+	padding:2%;
+	font-size: 1.5em;	
+	margin-bottom: 1.5em;
+}
+
+.info{
+	display: flex;
+	flex-direction: row;
+}
+.info{
+	color: aliceblue;
+	background: rgba(0, 0, 0, 0.405);
+	backdrop-filter: blur(5em);
+	padding:20px;
+	font-size: 20px;	
+}
+.info p{
+	align-items: center;
+	margin:5em;
+	font-family:"Felix Titling Regular" ;
+	font-size: larger;
+}
+.info p::first-letter{
+	font-size: 50px;
+	font-family:"Felix Titling Regular" ;
+}
+.info p em{
+	display: block;
+	margin-left: 30em;
+}
+/*Css for footer*/
+footer{
+	background-color: rgb(205, 178, 142);
+	margin-top: 2em;;
+}
+.row{
+	font-size: 32px;
+	text-align: center;
+	background-color: rgb(254, 213, 179);
+	letter-spacing: 7px;
+}
+.row i{
+	color: rgb(88, 62, 22);
+}
+.policies a{
+	text-decoration: none;
+	font-style: normal;
+	color:rgb(55, 35, 3);
+	margin-right: 20px;
+}
+footer p{
+	text-align: center;
+}
+/*Css for view*/
+.viewbg{
+	background-image: url("../images/backgroundvieww.jpg");
+	background-size: cover;
+	backdrop-filter: brightness(100%);
+}
+table{
+	border: #2f0606 dashed 2px;
+	border-radius: 5px;
+	align-items: center;
+	backdrop-filter: blur(5px);
+}
+.t1{
+	margin-left: 30em;
+	margin-bottom: 5em;
+}
+.t2{
+	margin-left: 16.5em;
+}
+.view th{
+	font-family: "Felix Titling Regular";
+	font-size: x-large;
+	color: #2f0606;	
+	padding:1.2em;
+	text-align: center;
+	align-items: center;
+	background-color: rgba(237, 164, 55, 0.427);
+
+}
+.view td{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.25em;
+	margin-bottom: 2px;
+	padding: 1em;
+	border-bottom: #2f0606 2px solid;
+}
+h1.images{
+	background-color: rgba(237, 164, 55, 0.427);
+	font-family: "Felix Titling Regular";
+	color: #2f0606;
+	text-align: center;
+	font-size: 1.5em;
+	padding:0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+/*footer fpr add*/
+.addfoot{
+	bottom:-180px;
+}
+.add p{
+	font-family:"Felix Titling Regular" ;
+	margin: 1.5%;
+}
+.add p button{
+	font-size:1em;
+	padding:0.25em;
+	margin: 0;
+	margin-left: 0.4em;
+	color: #ffffff;
+	height: max-content;
+	width: max-content;
+	border: #ffffff80 0.05em dashed;
+	cursor: pointer;
+}
+button.icons{
+	margin:0.15em;
+	padding:0.25em;
+	height: fit-content;
+	width: fit-content;
+}
+.icons a i.fa{
+	margin:0.15em;
+	padding:0.25em;
+	color: #ffffff;
+}
+.logout a{
+	color: white;
+	font-size: 1.25em;
+}
